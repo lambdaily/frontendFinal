@@ -14,7 +14,7 @@ const ViewComponent: React.FC = () => {
   const location = useLocation<{ userDetails: UserDetails }>();
   const userDetails = location.state?.userDetails;
 
-  // Redirect to the login page if userDetails is not present
+  // Redirect to the login page if userDetails is not present control
   if (!userDetails) {
     return <Navigate to="/login" />;
   }
