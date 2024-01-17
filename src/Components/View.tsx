@@ -21,11 +21,10 @@ const ViewComponent: React.FC = () => {
 
   return (
     
-    <div>
+    <div className='flex flex-col flex-center'>
       <h2>Welcome, {userDetails.fullName}!</h2>
       <h2>{userDetails.email}!</h2>
       <h2>role:{userDetails.roles}! </h2>
-      {/* Display other user details as needed */}
     </div>
   );
 };
